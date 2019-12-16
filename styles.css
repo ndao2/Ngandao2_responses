@@ -1,0 +1,308 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.5em;
+	background: #f2f2f2;
+	color:black;
+	font-size: 22px;
+	line-height: 1.2;
+}
+body{
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/unsplahBg2.jpg) no-repeat center / cover;
+}
+ul{
+  padding: 0;
+}
+
+button {
+  position: relative;
+  background: rebeccapurple;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border:5px solid white;
+  color: white;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 0;
+}
+main {
+	max-width: 35em;
+	margin: 2em auto;
+	border-left: 2px solid white;
+	padding: 0 0.5em;
+	perspective: 20em;}
+header{ 
+      height: 3em;
+      font-weight: 1em;
+      color: red; }
+h1,h2, h3 {
+	font-size: 2em;
+	margin: 0 0 1rem 0;
+	padding: 0;
+}	
+
+ 
+p { font-family: sans-serif;
+	margin: 0 0 1rem 0;
+	border-radius: 2em;
+	font-size: 15px;
+	color: ;
+
+}
+.wiki {
+  border-left:1.5em;
+  color: red;
+}
+@keyframes p {
+  from { top: 0; left: 0; }
+  to   { top: 100px; left: 100px; }
+}
+img {
+	max-width: 90%;
+	height: auto;
+	margin: 2em;
+	border-radius: 2px;
+
+}
+
+}
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+
+
+}
+.borders {
+	border-radius: 5em 10em 5em 10em;
+	animation-name: borders;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform: rotateY(20deg);
+	transform-origin: center;
+	transition: transform 3s;
+}
+
+.borders:hover {
+	transform: rotateY(-45deg);
+
+}
+
+@keyframes borders {
+	from { border-radius: 0 10em 1em 0; }
+	to { border-radius: 0 1em 10em 0; }
+}
+
+.button{
+
+	border: 5px solid;
+	border-radius: 3em;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: green;
+	display: inline-block;
+	margin: 0.5em 0;
+	transition:  0.25s;
+	border-left: 3em;
+
+}
+
+.button:hover {
+	color:black;
+	
+
+}
+.button-1 {
+	border: 5px solid;
+	border-radius: 3em;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: green;
+	display: inline-block;
+	margin: em 0;
+	transition:  0.25s;
+
+
+
+}
+
+.button-2 {
+	border: 5px solid;
+	border-radius: 3em;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: green;
+	display: inline-block;
+	margin: 2em 0;
+	transition:  0.25s;
+
+}
+.button-3 {
+	border: 5px solid;
+	border-radius: 3em;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: green;
+	display: inline-block;
+	margin-left: 0.5em 1em;
+	transition:  0.25s;
+
+}
+.button-4 {
+	border: 5px solid;
+	border-radius: 3em;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: green;
+	display: inline-block;
+	margin: 5em 0;
+	transition:  0.25s;
+	align-items: 5em;
+
+}
+
+nav {
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 15px;
+    width: 100%;
+    background: white;
+    z-index: 2;
+    padding: 0.1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+
+	color: green;
+	margin: 0.5em;
+	text-decoration: none;
+	transition: color 0.25s;
+}
+
+nav a:hover {
+     color: #f2c544;
+}
+
+.branding {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.active {
+	text-decoration: underline;
+	position: center;
+
+	
+}
+
+.grid{
+	margin: 3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+	width: 100%;
+    padding: 0.5em;
+    transition: all 0.5s;
+}
+ @media(min-width: 750px) {
+.item{
+	width: 50%;
+}
+
+ }
+
+@media(min-width: 1200px){
+.item{
+	width: 33.33%
+}
+
+summary:hover{
+background-color: darkblue:;
+color: red;
+border-radius: 1em;
+padding: 0.25em 0.5em;
+font size: 20px;
+letter-spacing: 20px;
+
+
+
+}
+.toggle p {
+
+	opacity: 0;
+	transition: all 0.5s;
+	height: 0;
+	transition-delay: 0.5s;
+	transform: translateX(-2em);
+	font-weight: 600px;
+	font-size: 3em;
+	color: white;
+
+	
+}
+.show p {
+	opacity: 1;
+	height:100%;
+	transform: translateX(0);
+
+}
+
+footer {
+
+	margin: 1em;
+	padding: 1em 0.5em 1em 0.5em;
+	color: green;
+	text-align: right;
+	margin-bottom: 400px;
+}
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
