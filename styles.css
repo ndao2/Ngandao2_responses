@@ -62,9 +62,7 @@ p { font-family: sans-serif;
 	color: ;
 
 }
-.wiki {
-  border-left:1.5em;
-  color: red;
+
 }
 @keyframes p {
   from { top: 0; left: 0; }
@@ -75,6 +73,7 @@ img {
 	height: auto;
 	margin: 2em;
 	border-radius: 2px;
+	fifti
 
 }
 
